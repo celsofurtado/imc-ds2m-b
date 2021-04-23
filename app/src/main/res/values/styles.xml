@@ -13,4 +13,8 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="label_dark_form" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
 </resources>
