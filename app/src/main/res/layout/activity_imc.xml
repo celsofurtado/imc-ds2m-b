@@ -42,6 +42,7 @@
                 android:textAppearance="@style/label_dark_form"/>
 
             <EditText
+                android:id="@+id/edit_text_peso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Qual o seu peso?"
@@ -58,6 +59,7 @@
                 android:layout_marginTop="16dp"/>
 
             <EditText
+                android:id="@+id/edit_text_altura"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Qual é a sua altura?"
@@ -67,6 +69,7 @@
                 android:inputType="numberDecimal"/>
 
             <Button
+                android:id="@+id/button_calcular_imc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Calcular IMC"
