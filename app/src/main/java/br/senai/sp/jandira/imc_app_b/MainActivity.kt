@@ -13,12 +13,16 @@ class MainActivity : AppCompatActivity() {
 
         // ** Clique no card IMC
         val cardImc = findViewById<CardView>(R.id.card_imc)
+        val cardNcd: CardView = findViewById(R.id.card_ncd)
 
         cardImc.setOnClickListener {
-
             val abrirImcActivity = Intent(this, ImcActivity::class.java)
             startActivity(abrirImcActivity)
+        }
 
+        cardNcd.setOnClickListener {
+            val abrirNcdActivity = Intent(this, NcdActivity::class.java)
+            startActivity(abrirNcdActivity)
         }
 
     }
