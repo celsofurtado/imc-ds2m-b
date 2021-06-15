@@ -1,9 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/luckiest_guy"
+            android:text="Health\nCalc"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/white"
+            android:textSize="48sp" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ncd"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/top_wave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_wave"
+        android:layout_below="@id/header"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_wave"
+        android:layout_above="@id/bottom_wave"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/edit_text_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawableTint="@color/colorAccent"
+            android:drawablePadding="8dp"
+            android:layout_alignParentTop="true"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/edit_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawableTint="@color/colorAccent"
+            android:drawablePadding="8dp"
+            android:layout_below="@id/edit_text_user"
+            android:layout_marginTop="8dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="entrar"
+            android:textAllCaps="true"
+            android:layout_below="@id/edit_text_password"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_login_background"
+            android:textColor="@android:color/white"/>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottom_wave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_wave2"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desenvolvido por DS2M-B"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+
+
+</RelativeLayout>
