@@ -9,19 +9,19 @@
         android:roundIcon="@drawable/peso"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".DashBoardActivity"></activity>
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".ResultadoNcdActivity" />
         <activity android:name=".NcdActivity" />
         <activity android:name=".ResultadoImcActivity" />
         <activity android:name=".ImcActivity" />
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
