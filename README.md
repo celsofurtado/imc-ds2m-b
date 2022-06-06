@@ -24,6 +24,7 @@ Para criar a imagem Docker da aplicação é necessário que já tenhamos criado
 		docker build -t registryname.azure.io/seu_nome_de_imagem .
 		
 
+
 > **ATENÇÃO**, Você deve estar na raiz do projeto, no mesmo diretório do arquivo *Dockerfile*
 
 
