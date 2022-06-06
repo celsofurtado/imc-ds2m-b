@@ -33,7 +33,7 @@ Verifique, na saída do comando, se a nova imagem aparece na lista de imagens Do
 
 ## Criando o container
 
-	Para criar um container a partir da imagem criada, rode o seguinte comando:
+Para criar um container a partir da imagem criada, rode o seguinte comando:
 
 		docker container run -d -p 80:8080 regsitryname.azure.io/seu_nome_de_imagem
 
