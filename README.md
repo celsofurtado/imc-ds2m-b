@@ -39,7 +39,7 @@ Para criar um container a partir da imagem criada, rode o seguinte comando:
 
 **Onde,**
 
-**-d** - Executa o container em *background*
+**-d** - Executa o container em *background*\
 **-p** - Diz ao Docker que requisições no *localhost*, na porta 80 deverão ser redirecionados para a porta 8080 do container.
 
 
