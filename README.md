@@ -1,7 +1,6 @@
 # Como "dockerizar" um app Spring Boot
 
 \
-\
 ## Configurando o projeto
 
 Para criar uma imagem Docker do aplicativo Spring Boot é necessário criar o arquivo *Dockerfile* na raiz do projeto. Esse arquivo será criado na sua IDE preferencial. O conteúdo do arquivo deve ser o seguinte:
@@ -18,23 +17,19 @@ Para criar uma imagem Docker do aplicativo Spring Boot é necessário criar o ar
 **ADD** - É o local onde o executável se encontra. O *app.jar* é um *alias*.\
 **ENTRYPOINT** - É o comando usado para executar o aplicativo com os seu atributos.\
 \
-\
 ## Criando a imagem do app
 
 Para criar a imagem Docker da aplicação é necessário que já tenhamos criado, na Azure, um *Container Registry*, que terá um *Login server* do tipo *registryname.azurecr.io*. Esse *Login server* deverá ser utilizado na criação da imagem a partir do *Docker CLI*. Para criar a imagem execute o seguinte comando:
 
 		docker build -t registryname.azure.io/seu_nome_de_imagem .
 \
-\
 > **ATENÇÃO**, Você deve estar na raiz do projeto, no mesmo diretório do arquivo *Dockerfile*
-\
 \
 Após a execução do comando acima, rode o comando:
 
 		docker images
 
 Verifique, na saída do comando, se a nova imagem aparece na lista de imagens Docker disponíveis no seu computador.
-\
 \
 ## Criando o container
 
@@ -46,7 +41,6 @@ Para criar um container a partir da imagem criada, rode o seguinte comando:
 
 **-d** - Executa o container em *background*\
 **-p** - Diz ao Docker que requisições no *localhost*, na porta 80 deverão ser redirecionados para a porta 8080 do container.
-\
 \
 ## Enviando o container para a Azure
 
